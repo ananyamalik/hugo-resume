@@ -1,15 +1,23 @@
 [
     {
-        "school":"[Rochester Institute of Technology](https://rit.edu)",
-        "degree":"Bachelor of Science",
-        "major":"Management Information Systems",
-        "notes":"Beta Gamma Signma, High Honors",
-        "range":"2006 - 2008"
+        "school":"[Dwarkadas J. Sanghvi College of Engineering](www.djsce.ac.in)",
+        "degree":"Bachelor of Engineering",
+        "major":"Computer Engineering",
+        "notes":"Grade: 9.72 CGPA",
+        "range":"2017 - 2021"
     },
     {
-        "school":"Clinton Community College",
-        "degree":"Associate of Applied Science",
-        "major":"Computer Information Systems",
-        "range":"2004 - 2006"
+        "school":"[Pace Junior Science College, Andheri](https://www.pacejuniorsciencecollege.com/)",
+        "degree":"Higher Secondary Certificate",
+        "major":"Science",
+        "notes": "Grade: 91.01%",
+        "range":"2015-2017"
+    }
+    {
+        "school":"[VCW Arya Vidya Mandir](https://avmschools.ac.in/)",
+        "degree":"Indian Certificate of Secondary Education ",
+        "major":"Group 3 Elective: Computer Applications",
+        "notes": "Grade: 96.17%",
+        "range":"2015-2017"
     }
 ]

@@ -1,20 +1,19 @@
 [
     {
-        "role":"Boss man",
-        "company":"Current Company LTD",
-        "summary":"Led in development of fast paced software teams.\n- list\n- of\n- things",
-        "range":"February 2016 - Present"
+        "role":"Project Trainee",
+        "company":"Tata Commmunications Limited",
+        "summary":"Researched on techniques to interpret the fraud detection model using Call Data Records.\n- Implemented LIME as the final solution to explain the fraudulent entries, increasing efficiency by 30%\n- Compiled a report on ExplainableAI and interpretability\n- Analysed the Call Data Records to detect patterns in call location, timing, duration using K-Means analysis, thresholding in python.",
+        "range":"June 25, 2020 - July 31, 2020",    },
+    {
+        "role":"Research and Development Intern",
+        "company":"Centre of Studies in Resource Engineering,IIT Bombay",
+        "summary":"Created a portal to stream live data from the Remote Sensing Instrument using Flask and displayed them using graphs",
+        "range":"March 2020- June 2020"
     },
     {
-        "role":"Developer",
-        "company":"Current Company LTD",
-        "summary":"Expedited the synergies of collaborative agile tooling.",
-        "range":"March 2014 - February 2016"
-    },
-    {
-        "role":"Developer",
-        "company":"Previous Company Inc.",
-        "summary":"Implemented continuous devops pipelines automationing",
-        "range":"February 2013 - March 2014"
+        "role":"Project Trainee",
+        "company":"Hindustan Petroleum Corporation Limited",
+        "summary":"Worked on UIPath to develop a deployment process for the company code from development to production on the company’s system",
+        "range":"June 2019-July 2019"
     }
 ]

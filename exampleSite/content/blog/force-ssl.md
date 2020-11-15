@@ -1,59 +1,30 @@
 ---
-title: 'Forcing Visits to use SSL'
+title: 'Quantum Computing'
 date: Thu, 01 Jan 2009 14:09:10 +0000
 draft: false
-tags: [apache, apache, redirect, rewrite, ssl, web development]
+tags: [quantum computinng, opinion piece]
+image: '/img/quantumcomp.png'
 ---
 
 Intro
 -----
 
-Doesn't matter whether it's a CakePHP app for a client, your own personal CMS, or any other web based application. **If your passing around passwords or other sensitive info you should really implement SSL.** SSL provides 2 main perks to your visitors.
-
-*   First it encrypts all communication that flies across the web. This prevents curious or devious billies from getting your secrets.
-*   Secondly it ensures to the user that your server is in fact who it claims, and not a nasty 'man in the middle" attack.
-*   Finally it gives your site that touch of class.... which of course a classy person like yourself relies on.
-
-Once you implement SSL certificates on your server you'll want to **require secure connections** using Apache's rewrite module. Now I won't dwell on the creation and signing of certificates, its already well documented.  If your just starting out though,heres a few links I recommend;
-
-*   [Creating self-signed certificates](http://www.tc.umn.edu/~brams006/selfsign.html "Creating and Signing your own SSL Certificate") (free, but should only be used internally or for testing, users will; see an 'Untrusted" warning)
-*   [Requesting a CA Signed certificate](http://www.google.com/url?sa=t&source=web&ct=res&cd=10&url=http%3A%2F%2Fwww.lsu.edu%2Fpki%2FSSL_Certificate_Apache.pdf&ei=Z8FcSbDRGaCY8gTdk7GHDQ&usg=AFQjCNELddGd6jW1_Dv1X-CaocEVa4rV2A&sig2=FQMNaM_RlhngJW3MSYiQzw "Generating a Certificate Signing Request") (not free, but the final certificate is trusted and seamless for users)
-
-The second link uses the schools internal CA, you will need to pay a public CA like Entrust or Verisign. **All of this information is aimed at 'nix or solaris servers running apache**. Why? cause a production windows server is laughable :-p
-
-Now that you have a certificate, whats next?
+Let’s dive into the deeper end straight, and begin by asking a simple question, “What is quantum?”. It is in high probability that as a millenial in this day and age of pop culture, quantum has been a term, that one has heard one too many times. Taking the literal meaning Quantum is derived from the latin word of amount, that is the smallest possible discrete unit of any physical property such as energy or matter. Through our higher school life, we have very carefully and thoroughly studied quantum in physics. After being first proposed by Max Planck in a german conference, in the 1900, quantum theory has evolved over the years with various acclaimed scientists, proposing various acclaimed theories. Just to make sure all of us are on the same page, Quantum is the minimum amount of any physical entity involved in an interaction.
 --------------------------------------------
 
-So there you are you have a shiny new Certificate and Server key, how do you force visitors to your apache driven site to use the SSL? You copied the certificates into the appropite locations right? And you have made the needed changes in httpd.conf right? So now when you view https://example.com you see a 'trusted' warning or your site right? If No to any of these than [this article](http://www.sitepoint.com/article/securing-apache-2-server-ssl/ "Securing Apcche Server with SSL") does a pretty good job of outlining those steps.
+We now realise that we have a decent idea on quantum, however, by the time we have understood this another concept called quantum computing pops up! Basically, quantum computing involves application of properties of quantum physics to process information. These computers involve operation with nanoscale components at temperatures colder than intergalactic space, with which they have the potential to solve the world’s toughest problems. 
 
-The SSL Works, How do I force connections to use it?
+An initial assumption of quantum computers, often begin with the very popular belief that these computers are an alternative to classical computing, however many heavyweights in the industry strongly believe that quantum and classical computers are here to co-exist. Infact corporations such as Microsoft have very famously imagined quantum computers like a GPU, a specialized processor used for applicable scenarios. In a nutshell, while the classical computers shall run computations, the tougher problems with complexity that are said to be unsolved can be solved by our quantum computers.
+
 ----------------------------------------------------
+Now that we have understood what quantum computing is, let’s explore it’s functionality and it’s workability. We know that our regular computers work on binary bits, 1 and 0. Everything that we see, understand and compute is first converted into a binary string of 1’s and 0’s, it’s after that the system applies an algorithm to execute a favoured task.They follow the principles of Boolean Algebra.The regular computers have a macroscopic view, while quantum computing is a view in the microscopic world. It is based on the fact that, in the microscopic world, things don’t have to be as clear-cut as we’d expect from our macroscopic experience. They can be in several places at once, for example, and in the case of photons simultaneously exhibit two kinds of polarisation. We never see this superposition of different states in ordinary life because it somehow disappears once a system is observed: when you measure the location of an electron or the polarisation of a photon, all but one of the possible alternatives are eliminated and you will see just one. Nobody knows how that happens, but it does. It bears an eerie similarity to Schrodinger’s cat.
 
-First you need to decide if you want to force every page on your site to use SSL, or only a particular sub-domain, or maybe just your admin directory.  Since the overhead is minimal there is no harm is forcing the entire domain to leverage SSL, but if it is a self-signed certificate for your personal use than you'll most certainly want to restrict its use to your own areas. This prevents users from seeing that nasty warning "This server is not trusted" You'll know if your using SSL because the url prefix changes from http to https (s for secure).
+The Quantum computer, by contrast, can work with a two-mode logic gate: XOR and a mode we’ll call QO1 (the ability to change 0 into a superposition of 0 and 1, a logic gate which cannot exist in classical computing). In a quantum computer,the elemental particles like electrons and photons, with either their charge or polarization acting as a representation of 0 and/or 1. Each of these particles is known as a quantum bit, or qubit, the nature and behavior of these particles form the basis of quantum computing. The two most relevant aspects of quantum physics are the principles of superposition and entanglement.
 
-### Forcing entire domain to use SSL
+Now, don’t worry, I do realise that if you are as new as me, in this world of quantum, an article as basic as this can go right over your head and jump off into another dimension, so we stop here. Today in a world where IBM, Google and Microsoft all are in a crazy race to attain Quantum supremacy, we need to understand that the next iteration in commercial computing may in fact depend upon the Quantum Computing.
 
-**You want any visit, any where to use ssl**. This probably the simplest solution. Create or append to your htaccess file in the top directory of your server. Some people use a port check (80 is typically http, while 443 is https) but if you have alernate configs or the user just adds :8080 to the end of the url this method is useless. Instead check whether the https environmental variable is set, if not then redirect.
+Machine Learning an extremely popular domain amongst the rising techno stars, actually stands to benefit a lot from Quantum. Quantum computing could empower Machine Learning by enabling AI to search from gigantic datasets concerning medical research, financial markets, consumer experiences. Quantum Computing could be used in optimization, by handling innumerable permutation and combinations, in an extremely efficient way that might as well pave a breakaway in algorithm design and analysis. Through Quantum we will be able to simulate and create and model molecular structure, only advancing biomedical research. According to IBM, Quantum computing could be used to model financial data and isolate key global risk factors.
 
-```
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{SERVER_NAME}$1 \[R,L\]
-```
+--------------------------------------------------------------
 
-### Forcing sub-domains to use SSL
-
-Maybe **you only want mysecretarea.example.com to use SSL**, that's easy enough. Its the same premise as above, but you move the htaccess file into the directory that corresponds to the subdomain. Also change the second line like below;
-
-```
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://mysecretarea.%{SERVER_NAME}$1 \[R,L\]
-```
-
-### Forcing a directory to use SSL
-
-This method cn get a little hairier if your using aliases or redirects on top of this one. You'll need to consider what order the commands are read. The basic principle is like so.  **You want all visits to example.com/admin to use ssl.** Create a htaccess file in the parent directory.  Again will check for the https variable, but this time we also check for the sub-directory to be in the path.
-
-```
-RewriteCond %{HTTPS} !=on
-RewriteRule ^/admin/(.*)$ https://%{SERVER_NAME}/admin/$1 \[R,L\]
-```
+IBM, in January, 2019, unveiled its first commercial quantum computer. While it is nowhere as powerful in applications as people envisioned it to be. Yet it’s a huge leap for mankind. With quantum in trend, it’s theoretical applications have always been in abundance. What’s fascinating to us, as young engineering students, to see these applications come to life.   

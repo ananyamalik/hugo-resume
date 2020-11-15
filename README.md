@@ -1,4 +1,2 @@
-## Ananya Malik Portfolio 
-
-#GUIDE
+# Ananya Malik Portfolio 
 
